@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="passport.css">
+    <title>Passport Application form</title>
+</head>
+<body>
+   <div class="content">
+      <form class="my-form" action="process.php" method="POST">
+         <h2 class="form" >User Registration Form</h2>
+         <span id="regapp">
+            <label>Registration to apply at<span>*</span>: </label>
+            <span class="radiobutton">
+               <div id="radiobut">
+                  <input type="radio" id="delhi" name="place">
+                  <label for="delhi">CPV Delhi</label>
+               </div>
+               <div id="radiobut">
+                  <input type="radio" id="passOff" name="place">
+                  <label for="passOff">Passport Office</label>
+               </div>
+            </span>
+         </span>
+         <div class="slct">
+            <label>Passport Office<span>*</span>: <sub>(As per Present Residential Address)</sub></label>
+            <select name="office_loc" id="offices">
+               <option value="select">---Select---</option>
+               <option value="delhi">Delhi</option>
+               <option value="mumbai">Mumbai</option>
+               <option value="chennai">Chennai</option>
+               <option value="hyd">Hyderabad</option>
+               <option value="guj">Gujarat</option>
+            </select>
+         </div>
+         <div class="details">
+            <label class="form"  for="fname">Given Name<span>*</span> <sub>(Max 45 Characters)</sub>   : </label>
+            <input type="text" name="fname" class="name">
+         </div>
+         <br>
+         <div class="details">
+            <label class="form"  for="lname">Surname <sub>(Max 45 Characters)</sub>    : </label>
+            <input type="text" name="lname" class="name">
+         </div>
+         <br>
+         <div class="details">
+            <label class="form"  for="dob">Date of Birth<span>*</span> <sub>(DD/MM/YYYY)</sub>:    </label>
+            <input type="date" name="dob">
+         </div class="details">
+         <br>
+         <div class="details">
+            <label class="form"  for="mail">E-Mail ID<span>*</span> <sub>(Max 35 Characters)</sub>:    </label>
+            <input type="email" name="mail">
+         </div class="details">
+         <br>
+         <div class="radiobutton">
+            <label for="yes/no">Do you want your Login Id to be same as E-mail Id?</label>
+            <span>
+               <input type="radio" name="yes">
+               <label for="yes">Yes</label>
+               <input type="radio" name="no">
+               <label for="no">No</label>
+            </span>
+         </div>
+         <br>
+         <div class="details">
+            <label class="form" for="login">Login ID<span>*</span>:</label>
+            <input type="text" name="login">
+         </div>
+         <br>
+         <div class="details">
+            <label class="form"  for="pwd">Password<span>*</span>:    </label>
+            <input type="password" name="pwd">
+         </div>
+         <br>
+         <div class="details">
+            <label class="form"  for="cpwd">Confirm Password<span>*</span>:    </label>
+            <input type="password" name="cpwd">
+         </div>
+         <br>       
+         <div class="details">
+            <label for="hq">Hint Question<span>*</span></label>
+            <select name="hq" id="hintq">
+                  <option value="q1">What is the name of your 1st school?</option>
+                  <option value="q2">A Secret...</option>
+                  <option value="q3">What is your favourite dish?</option>
+            </select>
+         </div>
+         <br>
+         <div class="details">
+            <label for="qa">Hint Answer<span>*</span>:    </label>
+            <input type="text" name="qa">
+         </div>
+         <br>
+         <label class="details" for="cap">Enter Characters Displayed<span>*</span>:    </label>
+         
+         <br>
+         <button type="button" onclick="alert('Registration is successful!')">Register</button>
+      </form>
+   </div>
+</body>
+</html>

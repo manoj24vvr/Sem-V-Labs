@@ -1,0 +1,69 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(198, 198, 199), rgb(10, 29, 136));
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.content{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.585);
+    color: rgb(13, 0, 55);
+}
+h2{
+    color: rgb(7, 43, 143);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 > span, label > span{
+    color: red;
+}
+.radio{
+    left: 100px;
+    color: aquamarine;
+}
+.slct{
+    margin: 10px 0px;
+}
+form input[type="text"],form input[type="password"], form input[type="date"], form input[type="email"] {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    border-color: rgb(138, 191, 238);
+    right: 15%;
+}
+#radiobut{
+    position: relative;
+    left: 60%;
+}
+div > select{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    border-color: rgb(138, 191, 238);
+    right: 17%;
+}
+.details{
+    position: relative;
+}
+button{
+    background-color: rgb(209, 225, 233);
+    margin: 20px 0;
+    margin-left: 40% ;
+    margin-right: 40%;
+    width: 100px;
+    font-size: large;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: rgb(17, 39, 89);
+    border: 1px solid black;
+}
+button:hover{
+    background-color: rgb(58, 95, 197);
+    color: aliceblue;
+}

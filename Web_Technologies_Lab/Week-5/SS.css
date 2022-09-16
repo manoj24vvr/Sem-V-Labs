@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://wallpaperset.com/w/full/8/5/a/26663.jpg);
+
+}
+.sun{
+    height: 90px;
+    width: 90px;
+    background-image: url(download.png);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #f9c05f;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mercury{
+    height: 20px;
+    width: 20px;
+    background: radial-gradient(circle,#935f2a 60% #54370c 75%);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #f9c05f;
+    left: 43%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 10s linear infinite;
+}
+
+@keyframes orbit2{
+    from{transform: rotate(0deg)translate(70px) rotate(0deg);}
+    to{transform: rotate(360deg)translate(70px) rotate(-360deg);}
+}
+p{
+    color: white;
+    font: system-ui;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+
+.mercury-outline,.venus-outline-1,.earth-outline-1,.mars-outline-1,.jupyter-outline-1,
+.saturn-outline-1,.uranus-outline-1,.neptune-outline{
+    border-radius: 50%;
+    border: 1px dotted #ddd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

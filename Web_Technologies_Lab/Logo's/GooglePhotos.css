@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.googlephotoslogo {
+    --size: 300px;
+    height: var(--size);
+    width: var(--size);
+    position: relative;
+    animation: spin 4s ease-in forwards 1s ;
+    
+}
+.colour {
+    background-color: #000;
+    width: calc(var(--size) * 0.5);
+    height: calc(var(--size) * 0.28);
+    border-radius: 100% 100% 0% 20% / 200% 200% 0% 20%;
+    position: absolute;
+    margin-top: calc(var(--size)* -0.14); 
+}
+.yellow {
+    background: #fcbc05;
+    top: 50%;
+    left: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+.red {
+    background: #e94335;
+    top: 25%;
+    left: 50%;
+    transform: rotate(90deg) translate(-50%, -50%);
+    transform-origin: left;
+}
+.green {
+    background: #34a853; 
+    top: 50%;
+    left: 25%;
+    transform: rotate(-90deg) translate(-50%, -50%);
+}
+.blue {
+    background: #4385f5;
+    top: 50%;
+    left: 25%;
+    transform: rotate(180deg) translate(-50%, -50%);
+}
+/*
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    60% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 1;
+    }
+    to {
+        transform: rotate(3600deg);
+    }
+}
+*/

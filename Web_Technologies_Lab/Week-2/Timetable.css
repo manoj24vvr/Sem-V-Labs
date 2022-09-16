@@ -1,0 +1,102 @@
+.body{
+    position: absolute;
+    border: 3px solid black;
+    margin: 2.5%;
+    width: 95%;
+    padding: 5px;   
+    height: 90%; 
+}
+header{
+    margin-top: 10px;
+    position: relative;
+}
+header img{
+    position: absolute;
+    left: 15px;
+    width: 60px;
+}
+header h2{
+    position: absolute;
+    left: 80px;
+    top: -20px;
+}
+header h5{
+    position: absolute;
+    left: 79px;
+}
+header p{
+    position: absolute;
+    left: 75px;
+    top: 17px;
+    font-style: italic;
+}
+section{
+    position: relative;
+    padding: 5px;
+}
+section div.dept{
+    position: relative;
+    top: 55px;
+    text-align: center;
+    font-size: 20px;
+}
+section .dept span{
+    color: red;
+}
+section .three{
+    position: relative;
+    top: 55px;
+}
+section .three .sem{
+    display: inline-block;
+    margin-right: 28%;
+}
+section .three .hall{
+    display: inline-block;
+    margin-right: 25%;
+}
+section .three .effDate{
+    display: inline-block;
+    right: 15px;
+}
+section >p{
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+.tables{
+    position: absolute;
+    top: 145px;
+    left: 10px;
+    padding: 5px;
+}
+table{
+    width: 100%;
+    margin: 50px;
+}
+table,th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 5px 25px;
+}
+.break{
+    width: 10px;
+}
+.lab{
+    text-align: center;
+}
+.time-table th{
+    background-color: rgb(191, 208, 248);
+}
+.time-table td:nth-child(1){
+    background-color: rgb(255, 214, 67);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#empty{
+    background-color: white;
+}
+.break{
+    background-color: rgb(207, 207, 207);
+}

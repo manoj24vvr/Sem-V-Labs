@@ -1,0 +1,37 @@
+.container{
+    background-color: aquamarine;
+    border:2px solid black;
+    border-radius: 40px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    height: 280px;
+    width: 400px;
+    padding: 5px;
+}
+
+.f{
+    position: absolute;
+    color: black;
+    font-size: 200px;
+    left: 15%;
+    top: 5%;
+    
+
+}
+
+.wild{
+    position: absolute;
+    color: yellow;
+    font-size: 100px;
+    top: 35px;
+    left: 80px;
+}
+
+.lowers{
+    position: absolute;
+    color: red;
+    font-size: 100px;
+    top: 125px;
+    left: 45px;
+}

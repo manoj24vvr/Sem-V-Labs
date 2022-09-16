@@ -1,0 +1,94 @@
+$commandname [-option] [parameter]
+$ clear
+    
+/   - root
+
+$ pwd     - to check where u r - gives absolute path
+
+
+.     - current directory
+..    - parent directory
+
+$ who     - list of no. of users
+	$ who |wc  -l
+$ whoami  - existing user
+$ who am i
+$ w     -
+
+$ date   - gives date and time
+
+$ echo    - to print in telnet
+  eg:- $ echo hello
+
+$ echo $HOME     - 
+
+--CW-- find version of linux
+
+d-> directory
+r-> regular file
+
+owners(u), group(g), others(o)
+
+--CW-- find s in sail
+
+$ ls -sail
+inodes (-i) -> unqiue number given to every objects, identifies objects or files in linux 
+all (-a)    -> shows all hidden files
+(-l)
+
+more - helps to go forward
+less - can go up and down, it is better
+
+$ mkdir foldername
+ eg:- $ mkdir 26July
+      $ mkdir 27 July  - foldername created is '27' because of whitespace
+
+$ cd    - takes u back to home directory
+
+$ touch   - to create files
+
+$ cat   - echoes - to come out of cat Ctrl D
+$ cat >f1  - to store whatever u write in f1
+$ cat f1   - displays info in f1
+$ cat -n f1   -  numbered display
+$ cat >>f1    -  edits the file
+
+$ cp srcfile destfile   - to copy contents of file
+  eg:- $ cp f1 f3
+
+$ mv oldname newname   - renames files
+ eg:- $ mv f4 newf4
+
+$ rmdir  - only works with empty folder, to delete non-empty directory
+$ rm -r   - recursive delete
+
+VI COMMANDS
+i->insert mode
+esc  - toggle between insert and 
+dd   - to delete lines
+3dd  - deletes 3 lines
+yy   - duplicates lines
+dw   - deletes entire word
+r    - replaces char
+x    - deletes char
+cw   - 
+:set nu   - to get numbered lines
+:wq  - saves and quits
+
+escape:%s/{the word u searching for}/{put the word u r replacing}/g
+
+$ wc   - to get no. of users
+
+WILDCARD
+* -> for any no. of characters
+? -> for a fixed no. of characters
+eg:- ls A? -> one character after A
+
+
+
+-o -O
+
+
+dse046
+dse054
+
