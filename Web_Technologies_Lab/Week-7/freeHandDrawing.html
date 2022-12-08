@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Hand Drawing</title>
+    <style>
+        body {
+            background: #d64c07;
+            text-align: center;
+            color: #ffffff;
+        }
+        #draw {
+            position: relative;
+            border: 1px dotted rgb(0, 0, 0);
+            cursor: crosshair;
+            background: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Try drawing on the below canvas!</h1>
+    <canvas id="draw"></canvas>
+
+    <script>
+        var canvas;
+        var context;
+
+        window.onload = function() {
+        canvas = document.getElementById('draw');
+        context = canvas.getContext('2d');
+        canvas.width = 900;
+        canvas.height = 690;
+        context.strokeStyle = "#464343";
+        context.lineWidth = 2;
+        
+        canvas.onmousedown = startDrawing;
+        canvas.onmouseup = stopDrawing;
+        canvas.onmousemove = draw;
+        
+        function startDrawing(e) {
+            isDrawing = true;
+            context.beginPath();
+            context.moveTo(e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop);
+        }
+   
+        function draw(e) {
+            if (isDrawing == true) {
+                var x = e.pageX - canvas.offsetLeft;
+                var y = e.pageY - canvas.offsetTop;
+            
+                context.lineTo(x, y);
+                context.stroke();
+            }
+        }
+        
+        function stopDrawing() {
+            isDrawing = false;
+        }
+        
+        /*var coord = document.getElementById("coord");
+        canvas.onmousemove = function(e) {
+            coord.value = e.pageX+" "+e.pageY+" / "+(e.pageX-canvas.offsetLeft)+" "+(e.pageY-canvas.offsetTop);
+        }*/
+        }
+    </script>
+</body>
+</html>

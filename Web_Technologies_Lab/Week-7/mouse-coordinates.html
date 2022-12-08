@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Co-ordinates</title>
+    <style type="text/css">
+        body{
+            background-color: rgb(235, 235, 235);
+            text-align: center;
+        }
+        canvas{
+            background-color: rgb(196, 228, 255);
+            margin: auto;
+            width: 90%;
+            height: 600px;
+            border: 2px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Check co-ordinates of the mouse pointer!</h1>
+    <canvas class="canvas_page" onmousemove="displayCoor(event)" onmouseout="vanish()"></canvas>
+    <p id="display-coord">Move the cursor over above canvas!</p>
+
+    <script>
+        function displayCoor(e){
+            var x = e.clientX;
+            var y = e.clientY;
+            var coord = "Coordinates (x,y) : (" + x + "," + y + ")";
+            document.getElementById("display-coord").innerHTML = coord;
+        }
+        function vanish(){
+            document.getElementById("display-coord").innerHTML="Move the cursor over above canvas!"
+        }
+    </script>
+</body>
+</html>
